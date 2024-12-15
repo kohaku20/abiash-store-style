@@ -1,0 +1,158 @@
+.stored-item {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: start;
+     width: 300px;
+     margin-top: 15px;
+     margin-left: 8px;
+     margin-bottom: 5px;
+ }
+.stored-size,
+.stored-price {
+     display: flex;
+     width: 300px;
+     flex-direction: row;
+     align-items: center;
+     justify-content: start;
+     margin-top: 15px;
+     margin-left: 8px;
+     margin-bottom: 5px;
+ }
+ .data-info {
+     font-size: 16px;
+     color: rgb(97, 83, 83);
+     margin: 0;
+     margin-right: 15px;
+ }
+ .stored-img {
+     width: 300px;
+     height: 190px;
+     object-fit: contain;
+ }
+ .stored-name {
+     text-transform: uppercase;
+     font-size: 16px;
+     margin: 0;
+ }
+ .stored-sized {
+     text-transform: uppercase;
+     font-size: 14px;
+     margin: 0;
+     width: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 20px;
+     text-align: center;
+     background-color: rgb(211, 204, 204);
+     color: white;
+     border-radius: 5px;
+     border: 1px solid white;
+ }
+ .pesos {
+     font-size: 20px;
+     font-weight: 500;
+     color: gray;
+ }
+ .stored-quantity {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: start;
+     position: absolute;
+     top: 245px;
+     right: 20px;
+ }
+ .stored-quantity2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    top: 245px;
+    right: 20px;
+}
+ .stored-quantities {
+     text-transform: uppercase;
+     font-size: 16px;
+     margin: 0;
+ }
+ .stored-s-quantities {
+     text-transform: uppercase;
+     font-size: 20px;
+     margin: 0;
+ }
+ .stored-stock-item {
+     display: grid;
+     grid-template-columns: 2fr 1fr 1fr;
+     background-color: blanchedalmond;
+     color: black;
+     height: 35px;
+     border: 0;
+     border-bottom: 1px solid black;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ .stored-stock-supply {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     background-color: blanchedalmond;
+     color: black;
+     height: 35px;
+     border: 0;
+     border-bottom: 1px solid black;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ .detail,
+ .detail-stocks {
+     font-size: 12px;
+     font-weight: 600;
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     justify-content: center;
+ }
+ .quantity,
+ .detail-stocks:last-child {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: red;
+     font-weight: 650;
+     font-size: 14px;
+ }
+ .buy-button {
+     position: absolute;
+     right: 15px;
+     bottom: 12px;
+     background-color: transparent;
+     border: 0;
+     cursor: pointer;
+     width: 50px;
+     height: 35px;
+     color: black;
+     font-weight: 700;
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+     justify-content: center;
+ }
+ .buy-button:active {
+     background-color: green;
+     color: white;
+ }
+ .buy-pic {
+     width: 40px;
+     height: 35px;
+     object-fit: contain;
+     mix-blend-mode: multiply;
+ }
+ .highlight-high {
+     background-color: lightgreen;
+ }
+ .highlight-low {
+     background-color: lightblue;
+ }
+ 

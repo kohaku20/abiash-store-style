@@ -1,0 +1,247 @@
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 5px rgba(0,0,0,0.50);
+    height: 75px;
+    z-index: 10;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.search-box {
+    position: absolute;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-item {
+    width: 300px;
+    background-color: antiquewhite;
+    padding-left: 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 40px;
+    border: 1px solid gray;
+    outline: 0;
+    font-size: 16px;
+}
+.search-item::placeholder {
+    color: gray;
+}
+.search {
+    height: 40px;
+    width: 50px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.search:active {
+    background-color: green;
+    color: white;
+}
+.buttonss {
+    position: absolute;
+    right: 90px;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.edit-btn {
+    padding: 8px 14px;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+    font-size: 13px;
+    color: rgb(46, 36, 36);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.editt-btn:active {
+    color: red;
+}
+.select-all,
+.delete-btn {
+    position: absolute;
+    left: -70px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border: 0;
+    opacity: 0;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid black;
+    color: rgb(46, 36, 36);
+    transition: all 0.50s;
+}
+.select-all:active,
+.delete-btn:active {
+    color: red;
+    transition: 0.10s;
+}
+.show1 {
+    left: 80px;
+    opacity: 1;
+}
+.show2 {
+    left: 220px;
+    opacity: 1;
+}
+.show-checkbox {
+    display: block !important; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+}
+.imported-clothes-container {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    padding-top: 10px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+    padding-left: 20px;
+    bottom: 0;
+    overflow-x: auto;
+    border: 1px solid black;
+    z-index: 2;
+    width: 1375px;
+    height: 550px;
+    background-color: transparent;
+    box-shadow: 0 0 2px rgba(0,0,0,0.20);
+}
+.types-ui {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid white;
+    position: relative;
+    left: 2%;
+}
+.tshirt-design {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.all-import {
+    display: flex;
+    position: absolute;
+    left: 8%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border: 0;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 5px rgba(0,0,0,0.50);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    height: 33px;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.item-import {
+    display: flex;
+    position: absolute;
+    left: 15%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border: 0;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 5px rgba(0,0,0,0.50);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    height: 33px;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.supply-import {
+    display: flex;
+    position: absolute;
+    left: 22%;
+    padding-left: 10px;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    border: 0;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 5px rgba(0,0,0,0.50);
+    justify-content: center;
+    width: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    height: 33px;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.all-ui,
+.tshirt-ui{
+    width: 40px;
+    margin-left: 5px;
+    height: 23px;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+}
+.supply-ui {
+    width: 40px;
+    height: 33px;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+}
+.all-import:active,
+.item-import:active,
+.supply-import:active {
+    background-color: white;
+    border: 1px solid red;
+}
+.bck {
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    height: 60px;
+    width: 80px;
+    border: 0;
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+.bck:active {
+    color: white;
+}
+.new-item-design {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

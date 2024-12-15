@@ -1,0 +1,135 @@
+.stocks-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 69px;
+    background-color:blanchedalmond;
+    border: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+    column-gap: 10px;
+    border-bottom: 2px solid black;
+}
+.option {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 230px;
+    pointer-events: fill;
+}
+.selection {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 18px;
+}
+.select-options {
+    text-decoration: none;
+    row-gap: 5px;
+    height: 30px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.clothes-stocks-container {
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    height: 530px;
+    width: 480px;
+    border: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,0.30);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.15ss;
+}
+.itemmove {
+    left: 150px;
+    width: 680px;
+}
+.clothes-stocks {
+    background-color: gray;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.clothes-details {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: white;
+    text-align: center;
+}
+.detailed {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 1px solid black;
+}
+.number-clothes-stocks {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    overflow-x: auto;
+    right: 0;
+    z-index: 2;
+    height: 450px;
+    background-color: rgba(0,0,0,0.50);
+}
+.supplies-stocks-container {
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    height: 530px;
+    width: 480px;
+    border: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,0.30);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.15s;
+}
+.supmove {
+    right: 120px;
+    width: 680px;
+}
+.supplies-details {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: white;
+    text-align: center;
+}
+.number-supplies-stocks {
+    position: absolute;
+    top: 80px;
+    overflow-x: auto;
+    left: 0;
+    right: 0;
+    height: 450px;
+    background-color: rgba(0,0,0,0.50);
+}

@@ -1,0 +1,87 @@
+body {
+    overflow-x: hidden;
+    overflow: hidden;
+}
+.main-body {
+    overflow-x: hidden;
+    overflow: auto;
+    width: 100%;
+}
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    max-width: 100vw;
+    height: 655px;
+    background-color: blanchedalmond;
+    z-index: 3;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.20);
+    transition: margin-left 0.5s, width 0.5s,
+    transform 0.3s ease; 
+}
+.pay-container,
+.import-container,
+.clothes-container,
+.stocks-container,
+.newproducts-container,
+.purchased-container {
+    position: absolute;
+    left: 0;
+    width: 100%; 
+    max-width: 100vw; 
+    border-top: 1px solid red;
+    background-color: blanchedalmond;
+}
+.pay-container {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 655px;
+    z-index: 2;
+    border-top: 1px solid red;
+    overflow-y: 0;
+    overflow-x: 0;
+    background-color: blanchedalmond;
+}
+.import-container {
+    position: absolute;
+    top:655px;
+    left: 0;
+    height: 700px;
+    border-top: 1px solid red;
+    background-color: blanchedalmond;
+}
+.stocks-container {
+    position: absolute;
+    top: 1310px;
+    left: 0;
+    height: 700px;
+    border-top: 1px solid red;
+    background-color: blanchedalmond;
+}
+.newproducts-container {
+    position: absolute;
+    top: 1965px;
+    left: 0;
+    height: 700px;
+    border-top: 1px solid red;
+    background-color: blanchedalmond;
+}
+.purchased-container {
+    position: absolute;
+    top:2620px;
+    left: 0;
+    height: 700px;
+    border-top: 1px solid red;
+    background-color: blanchedalmond;
+}
+.clothes-container {
+    position: absolute;
+    top:3265px;
+    left: 0;
+    opacity: 0;
+    height: 700px;
+    border-top: 1px solid red;
+    background-color: blanchedalmond;
+}

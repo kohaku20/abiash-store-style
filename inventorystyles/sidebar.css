@@ -1,0 +1,173 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom:  1px solid black;
+    height: 100px;
+    width: 230px;
+}
+.ads {
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.a {
+    font-size: 55px;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+.logout {
+    margin-bottom: -8px;
+    width: 40px;
+    height: 40px;
+    background-color: blanchedalmond;
+    border: none;
+    cursor: pointer;
+}
+.out {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+#removed {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 46.5%;
+    z-index: 5;
+    right: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 35px;
+    background-color: pink;
+    color: white;
+    border: 0;
+}
+.side-buttons {
+    position: absolute;
+    bottom: 10px;
+    height: 500px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.payment,
+.import,
+.clothe,
+.supply,
+.stock,
+.newp,
+.purchased {
+    height: 55px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.50);
+    width: 100%;
+    display: flex;
+    border: 0;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.payment:active,
+.import:active,
+.clothe:active,
+.supply:active,
+.stock:active,
+.newp:active,
+.purchased:active {
+    background-color: white;
+    font-weight: 700;
+}
+.gateway {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 5px;
+    text-wrap: nowrap;
+    margin-right: 20px;
+}
+.gateway1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 10px;
+    text-wrap: nowrap;
+}
+.gateway2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 150px;
+    margin-right: 20px;
+}
+.gateway3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 2px;
+    margin-right: 20px;
+    text-wrap: nowrap;
+}
+.pay-pic {
+    height: 65px;
+    width: 60px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.pay-pic2 {
+    height: 35px;
+    width: 35px;
+    margin-left: 50px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.pay-pic33 {
+    height: 35px;
+    width: 35px;
+    margin-left: 70px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.pay-pic3 {
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.pay-pic4 {
+    height: 70px;
+    width: 70px;
+    margin-left: 28px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.pay-pic5 {
+    height: 54px;
+    width: 54px;
+    margin-left: 30px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.pay-pic6 {
+    height: 54px;
+    width: 54px;
+    margin-left: 23px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.moveleft {
+    margin-left: -300px;
+}
+.leftside {
+    transform: translateX(-100%);
+}

@@ -1,0 +1,143 @@
+.main-login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: none;   
+    overflow-y: none;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.50);
+    transition: all 0.30s;
+}
+.remove {
+    opacity: 0;
+    pointer-events: none;
+}
+.log-container {
+    width: 1000px;
+    height: 550px;
+    position: absolute;
+    top: 50%;   
+    border-radius: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.50);
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius:4%;
+    border-bottom-left-radius:4%;
+    border-bottom-right-radius: 6%;
+    border-top-right-radius: 6%;
+    align-items: center;
+    background-color: lightblue;
+    border: 5px solid white;
+    justify-content: center;
+    transition: all 0.15s;
+}
+.movelog {
+    left: -50%;
+}
+.shop-logo {
+    width: 1370px;
+    border-top-left-radius:5%;
+    border-bottom-left-radius:5%;
+    height: 100%;
+    background-color: lightblue;
+}
+.abiash-logo {
+    width: 100%;
+    border-top-left-radius:5%;
+    border-bottom-left-radius:5%;
+    height: 100%;
+    background-color: white;
+    object-fit: cover;
+}
+.form-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: lightblue;
+}
+.log {
+    font-size: 60px;
+    color: red;
+    margin-bottom: 50px;
+}
+.in {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.input-container {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.fn-container,
+.ln-container,
+.email-container,
+.password-container {
+    height: 40px;
+    width: 360px;
+    position: relative;
+}
+.email {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    transition: all 0.15s;
+    background-color: white;
+}
+.input-fn:focus ~.email,
+.input-ln:focus ~.email,
+.input-email:focus ~.email,
+.input-password:focus ~.email{
+    top: -5px;
+    left: 25px;
+}
+.input-fn,
+.input-ln,
+.input-email,
+.input-password {
+    height: 100%;
+    color: white;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.50);
+    outline: 0;
+}
+.input-fn:focus,
+.input-ln:focus,
+.input-email:focus,
+.input-password:focus {
+    color: black;
+}
+.loggin {
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -50px;
+    border: 1px solid black;
+    color: red;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: bisque;
+    transition: all 0.15s;
+}
+.loggin:active {
+    background-color: rgb(231, 16, 16);
+    color: white;
+    border: 0;
+    font-weight: bold;
+}
